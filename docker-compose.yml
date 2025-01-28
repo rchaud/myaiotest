@@ -2,14 +2,14 @@ services:
   web:
     build: .
     ports:
-      - "${PORT}:5000"
+      - "5000:5000"
   redis:
     image: "redis:alpine"
-    
-  aiostreams:
-    image: ghcr.io/viren070/aiostreams:latest
-    container_name: aiostreams
-    restart: unless-stopped
-    expose:
-      - "3000:3000"
+
+  # aiostreams:
+  #   image: ghcr.io/viren070/aiostreams:latest
+  #   # container_name: aiostreams
+  #   # restart: unless-stopped
+  #   expose:
+  #     - "3000:3000"
 
