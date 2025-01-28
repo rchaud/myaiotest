@@ -4,9 +4,5 @@ services:
     container_name: aiostreams
     restart: unless-stopped
     expose:
-      - 3000
-    # labels:
-    #   - "traefik.enable=true"
-    #   - "traefik.http.routers.aio.rule=Host(`YOUR_PUBLIC_HOSTNAME`)"
-    #   - "traefik.http.routers.aio.entrypoints=websecure"
-    #   - "traefik.http.routers.aio.tls.certresolver=myresolver"s
+      - "3000:3000"
+
