@@ -3,7 +3,7 @@ services:
     image: ghcr.io/viren070/aiostreams:latest
     container_name: aiostreams
     restart: unless-stopped
-    expose:
+    ports:
       - "3000:3000"
 
 #   mediafusion:
